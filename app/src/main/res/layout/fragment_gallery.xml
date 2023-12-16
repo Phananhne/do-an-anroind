@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:background="#2196F3">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="16dp"
+        android:text="OCR hóa đơn"
+        android:textSize="24sp" />
+
+    <!-- Nút chọn file -->
+
+    <!-- Nút tải lên -->
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Tải lên" />
+
+    <!-- Kết quả -->
+    <TextView
+        android:id="@+id/tvResultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:paddingTop="16dp"
+        android:text="Kết quả"
+        android:textSize="18sp" />
+
+    <!-- Button xem số liệu phân tích -->
+    <Button
+        android:id="@+id/btnViewAnalysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResultLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Xem số liệu phân tích" />
+</RelativeLayout>

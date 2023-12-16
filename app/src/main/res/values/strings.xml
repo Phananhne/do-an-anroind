@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ứng dụng dự đoán tiền điện nước cá nhân </string>
+    <string name="navigation_drawer_open">Open navigation </string>
+    <string name="navigation_drawer_close">Close navigation </string>
+    <string name="nav_header_title">TECHAI XIN CHÀO</string>
+    <string name="nav_header_subtitle">techai@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Upload</string>
+    <string name="menu_slideshow">analysis</string>
+</resources>
