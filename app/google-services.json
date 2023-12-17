@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "724185045965",
+    "project_id": "doancuoiki-5c77c",
+    "storage_bucket": "doancuoiki-5c77c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724185045965:android:4e8b8d168287d741974284",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy6Ap5vfnApidcXzKQr0ss8eWvD0CwZcE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

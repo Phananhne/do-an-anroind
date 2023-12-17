@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,17 +27,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="Register"
                 android:textSize="35dp"
                 android:textStyle="bold"
-                android:layout_gravity="center"
                 android:textColor="@color/black"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email"
+                android:text="Name"
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:textColor="#000"
@@ -47,13 +47,34 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint="Enter the Email"
+                android:hint="Enter the Name"
+                android:inputType="text"
                 android:background="@drawable/forget"
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="35dp"
                 android:layout_marginTop="7dp"
-                android:id="@+id/Email"
-                android:inputType="textEmailAddress"/>
+                android:id="@+id/fullName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="40dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Enter the Email"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/forget"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/Email"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -62,7 +83,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:textColor="#000"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:layout_marginLeft="40dp"/>
 
             <EditText
@@ -79,14 +100,23 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Forget Password ?"
-                android:textSize="15dp"
-                android:textColor="@color/black"
+                android:text="Confirm Password"
+                android:textSize="18dp"
                 android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="30dp"
-                android:layout_gravity="right"
-                android:id="@+id/forgotPassword"/>
+                android:textColor="#000"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="40dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Enter the Confirm Password"
+                android:inputType="textPhonetic"
+                android:background="@drawable/forget"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/confirmPass" />
 
             <ProgressBar
                 android:layout_width="60dp"
@@ -94,37 +124,36 @@
                 android:layout_centerHorizontal="true"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                 android:indeterminate="true"
-                android:layout_marginTop="15dp"
-                android:visibility="gone"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center"
+                android:visibility="gone"
                 android:indeterminateTint="#FF0000"
-                android:layout_above="@+id/passwordET"
+                android:layout_above="@+id/registerBtn"
                 android:id="@+id/progressBar"/>
 
             <Button
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:text="Login"
-                android:textColor="#fff"
+                android:text="Register"
+                android:textColor="@color/white"
                 android:background="@drawable/btn"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
-                android:id="@+id/loginBtn"/>
+                android:id="@+id/registerBtn"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have an account? Register"
+                android:text="Do you have an account? LogIn"
                 android:textSize="16dp"
-                android:textColor="@color/black"
+                android:textColor="#000000"
                 android:textStyle="bold"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
                 android:id="@+id/createText"/>
 
         </LinearLayout>
 
     </LinearLayout>
-
 </ScrollView>
