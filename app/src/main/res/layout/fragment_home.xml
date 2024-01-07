@@ -1,22 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <!-- LinearLayout cho các tab Đề Xuất, Anime, Trò Chơi, và Anime Mới! -->
+    <LinearLayout
+        android:id="@+id/linearLayoutTabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="#000000"> <!-- Chọn màu phù hợp -->
+
+        <TextView
+            android:id="@+id/textViewRecommendation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đề xuất"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textViewAnime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Anime"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textViewGames"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Trò chơi"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textViewNewAnime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Anime mới!"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <!-- RecyclerView cho danh sách Anime ngang -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="#000000">
+
+        <!-- Other tabs -->
+
+    </LinearLayout>
+
+    <!-- Anime Header -->
+
+    <!-- RecyclerView for the anime list -->
+
+    <TextView
+        android:id="@+id/textViewAnimeHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutTabs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="318dp"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:text="Anime"
+        android:textColor="#FBFBFB"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAnime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAnimeHeader"
+        android:layout_marginTop="-18dp"
+        android:clipToPadding="false"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:scrollbars="horizontal">
+
+        <!-- item_movie.xml -->
+
+
+
+        <!-- Adapter and LayoutManager to be defined in Java/Kotlin code -->
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
